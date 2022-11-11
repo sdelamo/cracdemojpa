@@ -53,7 +53,7 @@ micronaut {
 configurations.all {
     resolutionStrategy.eachDependency { DependencyResolveDetails details ->
         if (details.requested.group == 'io.micronaut.crac') {
-            details.useVersion "1.1.0"
+            details.useVersion "1.1.1"
             details.because "3.7 does not contain 1.1.x of crac"
         }
     }
