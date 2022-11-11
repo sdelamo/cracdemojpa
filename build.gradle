@@ -48,6 +48,9 @@ micronaut {
         incremental(true)
         annotations("datajpah2.*")
     }
+    crac {
+        warmupScript = file("customWarmupScript.sh")
+    }
 }
 
 configurations.all {
